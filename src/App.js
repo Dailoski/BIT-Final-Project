@@ -39,6 +39,7 @@ const App = () => {
 
   useEffect(() => {
     if (!validData) {
+      //ova implementacija pokrece jednu bespotrebnu seriju requestova koja se desava prilikom setValidData(true);
       fetchReports();
       fetchCompanies();
       fetchCandidates();

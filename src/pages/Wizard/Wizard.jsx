@@ -26,9 +26,11 @@ const Wizard = ({ wizardStep, setWizardStep, reportBody, setReportBody }) => {
       ["candidateName"]: reportBody["candidateName"] || selectedCandidate.name,
       ["companyId"]: reportBody["companyId"] || selectedCompany.id,
       ["companyName"]: reportBody["companyName"] || selectedCompany.name,
+      // zasto se ovako pristupa propertijima objakta ["candidateId"]:  ?
     });
     setWizardStep(wizardStep + 1);
     setSelectedCandidate(0);
+    //selectedCandidate menja tip podatka iz stringa u broj, treba biti oprezan sa tim
   };
 
   const wizardPreviousStep = () => {
@@ -55,6 +57,7 @@ const Wizard = ({ wizardStep, setWizardStep, reportBody, setReportBody }) => {
   const doNothing = () => {
     return; // empty function used in next button method, see Wizard Buttons
   };
+  // but was it really necessary?
 
   return (
     <>

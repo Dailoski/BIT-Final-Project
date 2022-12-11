@@ -20,11 +20,14 @@ const WizardButtons = ({
       <div
         className="next-btn-wrapper"
         onClick={(event) => event.stopPropagation()}
+        // zasto je dodatj stopPropagation na div?
       >
         <Button
           name="Next"
           method={
             selectedCandidate || selectedCompany ? wizardNextStep : doNothing
+            // ako je dugme disabled, da li mu treba ovo do nothing?
+            // ili plus ternarni, da li su svi u timu okej sa ovakvim pisanjem?
           }
           classes={`next-btn ${
             selectedCandidate || selectedCompany ? "" : "disabled"

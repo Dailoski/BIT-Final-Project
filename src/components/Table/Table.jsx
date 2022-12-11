@@ -14,6 +14,7 @@ const Table = ({ candidateReports }) => {
 
   const renderTableData = () => {
     return candidateReports.map((e, i) => (
+      // e?
       <>
         <tr key={i}>
           <td>{e.companyName}</td>

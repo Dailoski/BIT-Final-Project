@@ -1,3 +1,5 @@
+// pomeranje svih Wizard komponenti u jedan wizard folder bi bilo korisno 
+
 import React from "react";
 import WizardCandidates from "../WizardCandidates/WizardCandidates";
 import WizardCompanies from "../WizardCompanies/WizardCompanies";

@@ -7,6 +7,7 @@ const WizardCompanies = ({ selectCompany, selectedCompany, highlighted }) => {
   return (
     <ul id="wizard-companies-list">
       {companies.map((e) => (
+        // e?
         <li
           className={`glass-effect ${
             selectedCompany.id == e.id ? highlighted : ""

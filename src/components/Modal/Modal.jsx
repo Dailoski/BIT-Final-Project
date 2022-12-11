@@ -1,3 +1,4 @@
+ // pogledati https://www.npmjs.com/package/react-modal
 import React, { useContext, useEffect } from "react";
 import "./Modal.scss";
 import { applicationContext } from "../../context";
