@@ -41,6 +41,7 @@ const Modal = ({ data, setDataModal }) => {
             classes="modal-close"
             method={setDataModal}
             methodArgument={null}
+            // method={()=> setDataModal(null)}
           />
           <h2 className="candidate-name">{data.candidateName}</h2>
           <div className="modal-info">

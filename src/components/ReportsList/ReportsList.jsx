@@ -53,6 +53,7 @@ const ReportsList = ({ token, search }) => {
                 name="delete report"
                 method={deleteReport}
                 methodArgument={e.id}
+                // method={() => deleteReport(e.id)}
               />
             </div>
           </li>

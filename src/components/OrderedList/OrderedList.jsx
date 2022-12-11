@@ -8,3 +8,5 @@ const OrderedList = () => {
 }
 
 export default OrderedList
+
+// da li ce se ova komponenta menjati ili ukloniti?
